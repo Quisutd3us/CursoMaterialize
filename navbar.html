@@ -65,11 +65,85 @@
                <a href="mobile.html">Mobile</a>
           </li>
      </ul>
+
+     <div class="container">
+          <div class="row">
+               <div class="col s12">
+
+               </div>
+          </div>
+     </div>
+
+     <!-- floating button -->
+     <!-- <div class="fixed-action-btn ">
+          <a href="#" class="btn-floating red darken-2 btn-large">
+               <i class="material-icons large">menu</i>
+          </a>
+          <ul>
+               <li>
+                    <a class="btn-floating red">
+                         <i class="material-icons">insert_chart</i>
+                    </a>
+               </li>
+               <li>
+                    <a class="btn-floating yellow darken-1">
+                         <i class="material-icons">format_quote</i>
+                    </a>
+               </li>
+               <li>
+                    <a class="btn-floating green">
+                         <i class="material-icons">publish</i>
+                    </a>
+               </li>
+               <li>
+                    <a class="btn-floating blue">
+                         <i class="material-icons">attach_file</i>
+                    </a>
+               </li>
+          </ul>
+     </div> -->
+     <!-- floating button toolbar-->
+     <div class="fixed-action-btn toolbar">
+          <a href="#" class="btn-floating red darken-2 btn-large">
+               <i class="material-icons large">menu</i>
+          </a>
+          <ul>
+               <li>
+                    <a class="btn-floating ">
+                         <i class="material-icons">insert_chart</i>
+                    </a>
+               </li>
+               <li>
+                    <a class="btn-floating">
+                         <i class="material-icons">format_quote</i>
+                    </a>
+               </li>
+               <li>
+                    <a class="btn-floating ">
+                         <i class="material-icons">publish</i>
+                    </a>
+               </li>
+               <li>
+                    <a class="btn-floating ">
+                         <i class="material-icons">attach_file</i>
+                    </a>
+               </li>
+          </ul>
+     </div>
+
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
      <script>
           document.addEventListener('DOMContentLoaded', function () {
                M.AutoInit();
+               // var elems = document.querySelectorAll('.fixed-action-btn');
+               // var instances = M.FloatingActionButton.init(elems, {
+               //      direction: 'left'
+               // });
+               var elems1 = document.querySelectorAll('.fixed-action-btn');
+               var instances = M.FloatingActionButton.init(elems1, {
+                    toolbarEnabled: true
+               });
           })
      </script>
 </body>
